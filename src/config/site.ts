@@ -23,8 +23,8 @@ export const siteConfig: SiteConfig = {
   ],
   authorName: "Paul Griz",
   authorURL: "https://github.com/PaulGriz",
-  url: "https://mit-capstone-private.vercel.app",
-  ogImage: "https://mit-capstone-private.vercel.app/og.jpg",
+  url: "https://cyberbites.vercel.app",
+  ogImage: "https://cyberbites.vercel.app/og.jpg",
   links: {
     twitter: "https://twitter.com/PaulGrizII",
     github: "https://github.com/PaulGriz",
