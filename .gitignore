@@ -1,5 +1,7 @@
 # -------------- Custom Ignores --------------
 .env
+.env.production
+.env.development
 dump.json
 .vscode/*
 

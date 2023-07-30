@@ -2,7 +2,7 @@
 
 ![LandingPage](./public/readme/LandingPage.png)
 
-This is a final project submission for the MIT Full Stack Development with MERN Course. This web application is a fully functional Food Ordering Platform where users have the ability to register an account, add dishes to their cart, and seamlessly checkout with credit card or Apply pay via a Stripe intergration. 
+This is a final project submission for the MIT Full Stack Development with MERN Course. This web application is a fully functional Food Ordering Platform where users have the ability to register an account, add dishes to their cart, and seamlessly checkout with credit card or Apply pay via a Stripe integration.
 
 ## Functionality
 
@@ -52,7 +52,6 @@ Your application will be evaluated in a manner similar to user acceptance testin
   - User receives success message
   - Input fields are validated
 
-
 ---
 
 ## Additional Challenges
@@ -61,7 +60,7 @@ You are encouraged to develop additional features for your app. You may develop 
 
 - User interface updates
 
-    - Display restaurants on the home page
+  - Display restaurants on the home page
   - Display dishes on a dishes page only after a restaurant is selected
 - Enable search functionality for restaurants and dishes
 - Display order history
