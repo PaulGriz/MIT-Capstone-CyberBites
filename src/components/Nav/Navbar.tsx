@@ -13,7 +13,7 @@ interface NavbarProps {
   session: Session | null
 }
 
-const NavbarTest = ({ session }: NavbarProps) => {
+const Navbar = ({ session }: NavbarProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const toggleMenu = () => {
@@ -84,4 +84,4 @@ const NavbarTest = ({ session }: NavbarProps) => {
   )
 }
 
-export default NavbarTest
+export default Navbar

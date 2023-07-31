@@ -95,7 +95,7 @@ export const authOptions: AuthOptions = {
       }
     },
     async redirect() {
-      // ----- Redirect to / -----
+      // ----- Redirect after login -----
       return "/stores"
     },
   },

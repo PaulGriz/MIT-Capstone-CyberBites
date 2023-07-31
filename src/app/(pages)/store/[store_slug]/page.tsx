@@ -15,13 +15,13 @@ import MenuItemCard from "./components/MenuItemCard"
 import CartXL from "@/components/Carts/CartDesktop"
 import FixedCartIcon from "@/components/Carts/FixedCartIcon"
 
-interface pageProps {
+interface PageProps {
   params: {
     store_slug: string
   }
 }
 
-const page: FC<pageProps> = async ({ params }) => {
+const StorePage: FC<PageProps> = async ({ params }) => {
   const restaurant = await getRestaurantWithSlug(params.store_slug)
 
   if (!restaurant) {
@@ -94,4 +94,4 @@ const page: FC<pageProps> = async ({ params }) => {
   )
 }
 
-export default page
+export default StorePage

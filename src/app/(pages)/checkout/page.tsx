@@ -8,11 +8,11 @@ import toast from "react-hot-toast"
 import FixedCartIcon from "@/components/Carts/FixedCartIcon"
 import { Button } from "@/components/ui/button"
 
-interface pageProps {
+interface PageProps {
   searchParams?: { [key: string]: string | string[] | undefined }
 }
 
-export default function CheckoutPage({ searchParams }: pageProps) {
+export default function CheckoutPage({ searchParams }: PageProps) {
   const router = useRouter()
   const { cart, processCheckout, clearCart } = useCartStore((state) => state)
 
@@ -56,47 +56,3 @@ export default function CheckoutPage({ searchParams }: pageProps) {
     </main>
   )
 }
-
-// import Stripe from "stripe"
-// import ClientCart from "./ClientCart"
-
-// async function getStripeProducts() {
-//   if (!process.env.STRIPE_SECRET_KEY) {
-//     throw new Error("Missing Stripe secret key")
-//   }
-//   const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
-//     apiVersion: "2022-11-15",
-//   })
-
-//   const products = await stripe.products.list()
-//   const prices = await stripe.prices.list()
-//   return { products, prices }
-// }
-
-// export default async function CheckoutPage() {
-//   const { products, prices } = await getStripeProducts()
-//   const productsList = products.data
-//   // console.log("---------------------------------")
-//   // console.log(products)
-//   // console.log("---------------------------------")
-//   // console.log(prices)
-//   // console.log("---------------------------------")
-//   if (products && prices) {
-//     return (
-//       <div>
-//         <p>Checkout Page</p>
-//         <div className="mb-3 bg-slate-300">
-//           {productsList.map((product) => {
-//             return (
-//               <div key={product.id}>
-//                 <p>{product.name}</p>
-//               </div>
-//             )
-//           })}
-//         </div>
-
-//         <ClientCart stripeProducts={productsList} />
-//       </div>
-//     )
-//   }
-// }

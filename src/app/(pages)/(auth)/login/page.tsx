@@ -8,11 +8,11 @@ import CyberVan from "@/components/Images/CyberVan"
 import AlreadySignedIn from "@/components/Warnings/AlreadySignedIn"
 import MustBeLoggedInToast from "@/components/Warnings/MustBeLoggedInToast"
 
-interface pageProps {
+interface PageProps {
   searchParams?: { [key: string]: string | string[] | undefined }
 }
 
-export default async function AuthenticationPage({ searchParams }: pageProps) {
+export default async function AuthenticationPage({ searchParams }: PageProps) {
   const session = await getServerSession(authOptions)
   return (
     <main className="container relative grid h-screen flex-col items-center justify-center md:max-w-none md:grid-cols-2 md:px-0">

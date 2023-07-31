@@ -4,6 +4,7 @@
 .env.development
 dump.json
 .vscode/*
+src/app/testing/*
 
 # -------------- Standard Node.js .gitignore --------------
 # dependencies
